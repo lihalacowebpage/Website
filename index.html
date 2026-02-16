@@ -243,10 +243,12 @@
                 <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
                     Contact us today for a complimentary consultation and discover how our expertise can benefit your business.
                 </p>
-                <a
-                    href="contact.html"
-                    class="inline-block bg-blue-700 text-white px-8 py-3 rounded-full font-semibold shadow-md hover:bg-blue-800 transition duration-300"
-                    >Schedule a Consultation</a
+               <button onclick="openConsultModal()"
+            class="inline-block bg-blue-700 text-white px-8 py-3 rounded-full font-semibold shadow-md hover:bg-blue-800 transition duration-300">
+                Schedule a Consultation
+            </button>
+
+                
                 > 
             </div>
         </section>
@@ -410,6 +412,79 @@
         container.addEventListener('mouseenter', () => clearInterval(autoRotateInterval));
         container.addEventListener('mouseleave', startAutoRotate);
     });
+</script>
+<!-- ================= CONSULTATION MODAL ================= -->
+
+<div id="consultModal"
+class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+
+<div class="bg-white w-full max-w-lg rounded-xl p-8 relative">
+
+<button onclick="closeConsultModal()"
+class="absolute top-3 right-3 text-gray-500 text-2xl">&times;</button>
+
+<h3 class="text-2xl font-bold mb-6 text-center">Schedule a Consultation</h3>
+
+<form action="https://formsubmit.co/lihalaco@yahoo.co.in/"
+method="POST">
+
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_subject" value="New Consultation Request">
+<input type="hidden" name="_next" value="https://lihalacowebpage.github.io/Website/index.html">
+
+<div class="mb-4">
+<label>Name</label>
+<input type="text" name="name" required
+class="w-full border p-3 rounded-md">
+</div>
+
+<div class="mb-4">
+<label>Email</label>
+<input type="email" name="email" required
+class="w-full border p-3 rounded-md">
+</div>
+
+<div class="mb-4">
+<label>Phone Number</label>
+<input type="tel" name="phone" required
+class="w-full border p-3 rounded-md">
+</div>
+
+<div class="mb-4">
+<label>Address</label>
+<input type="text" name="address"
+class="w-full border p-3 rounded-md">
+</div>
+
+<div class="mb-4">
+<label>Purpose of Consultation</label>
+<textarea name="purpose" rows="3" required
+class="w-full border p-3 rounded-md"></textarea>
+</div>
+
+<div class="text-center">
+<button type="submit"
+class="bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800">
+Submit Request
+</button>
+</div>
+
+</form>
+
+</div>
+</div>
+
+<!-- ================= MODAL SCRIPT ================= -->
+
+<script>
+function openConsultModal(){
+document.getElementById("consultModal").classList.remove("hidden");
+document.body.style.overflow="hidden";
+}
+function closeConsultModal(){
+document.getElementById("consultModal").classList.add("hidden");
+document.body.style.overflow="auto";
+}
 </script>
 
     </body>
