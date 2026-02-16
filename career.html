@@ -108,62 +108,72 @@ Vacancies are available for suitable candidates.
 </section>
 
 <!-- ================= POST YOUR RESUME ================= -->
+<form action="https://formsubmit.co/lihalaco@yahoo.co.in" 
+      method="POST" 
+      enctype="multipart/form-data"
+      class="bg-gray-50 p-8 rounded-xl shadow-md">
 
-<form action="https://formsubmit.co/lihalaco@yahoo.co.in"
-method="POST"
-enctype="multipart/form-data"
-style="background:#f9fafb;padding:30px;border-radius:12px;max-width:600px;margin:auto;">
-
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_fileUpload" value="true">
+<!-- REQUIRED CONTROLS -->
 <input type="hidden" name="_captcha" value="false">
 <input type="hidden" name="_subject" value="Resume Submission - Lihala & Co.">
-<input type="hidden" name="_next" value="thankyou.html">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_autoresponse" 
+       value="Thank you for submitting your resume to Lihala & Co. Our team will review and contact you if shortlisted.">
 
-<div style="margin-bottom:15px;">
-<label>Full Name</label><br>
-<input type="text" name="name" required
-style="width:100%;padding:10px;border:1px solid #ccc;border-radius:6px;">
+<!-- FULL NAME -->
+<div class="mb-4">
+<label>Full Name</label>
+<input type="text" name="Full_Name" required
+class="w-full border p-3 rounded-md">
 </div>
 
-<div style="margin-bottom:15px;">
-<label>Phone Number</label><br>
-<input type="tel" name="phone" required
-style="width:100%;padding:10px;border:1px solid #ccc;border-radius:6px;">
+<!-- PHONE -->
+<div class="mb-4">
+<label>Phone Number</label>
+<input type="tel" name="Phone_Number" required
+class="w-full border p-3 rounded-md">
 </div>
 
-<div style="margin-bottom:15px;">
-<label>Email</label><br>
-<input type="email" name="email" required
-style="width:100%;padding:10px;border:1px solid #ccc;border-radius:6px;">
+<!-- EMAIL -->
+<div class="mb-4">
+<label>Email</label>
+<input type="email" name="Email_Address" required
+class="w-full border p-3 rounded-md">
 </div>
 
-<div style="margin-bottom:15px;">
-<label>Date of Birth</label><br>
-<input type="date" name="dob"
-style="width:100%;padding:10px;border:1px solid #ccc;border-radius:6px;">
+<!-- DOB -->
+<div class="mb-4">
+<label>Date of Birth</label>
+<input type="date" name="Date_of_Birth"
+class="w-full border p-3 rounded-md">
 </div>
 
-<div style="margin-bottom:15px;">
-<label>Location</label><br>
-<input type="text" name="location"
-style="width:100%;padding:10px;border:1px solid #ccc;border-radius:6px;">
+<!-- LOCATION -->
+<div class="mb-4">
+<label>Location</label>
+<input type="text" name="Location"
+class="w-full border p-3 rounded-md">
 </div>
 
-<div style="margin-bottom:15px;">
-<label>Address</label><br>
-<input type="text" name="address"
-style="width:100%;padding:10px;border:1px solid #ccc;border-radius:6px;">
+<!-- ADDRESS -->
+<div class="mb-4">
+<label>Address</label>
+<input type="text" name="Address"
+class="w-full border p-3 rounded-md">
 </div>
 
-<div style="margin-bottom:20px;">
-<label>Upload Resume</label><br>
-<input type="file" name="attachment" required>
+<!-- RESUME -->
+<div class="mb-6">
+<label>Upload Resume (PDF/DOC/DOCX)</label>
+<input type="file" name="attachment" required
+accept=".pdf,.doc,.docx"
+class="w-full border p-3 rounded-md bg-white">
 </div>
 
-<div style="text-align:center;">
+<!-- SUBMIT -->
+<div class="text-center">
 <button type="submit"
-style="background:#1d4ed8;color:#fff;padding:12px 30px;border:none;border-radius:8px;font-size:16px;cursor:pointer;">
+class="bg-blue-700 text-white px-10 py-3 rounded-lg font-semibold hover:bg-blue-800">
 Submit Resume
 </button>
 </div>
@@ -186,6 +196,7 @@ Submit Resume
 
 </body>
 </html>
+
 
 
 
