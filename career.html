@@ -109,67 +109,50 @@ Vacancies are available for suitable candidates.
 
 <!-- ================= POST YOUR RESUME ================= -->
 
-<section class="py-20 bg-white">
-<div class="container mx-auto px-6 max-w-4xl">
-
-<h3 class="text-3xl font-bold text-center mb-6">Post Your Resume</h3>
-<div class="w-20 h-1 bg-blue-600 mx-auto mb-10"></div>
-
-<form action="https://formsubmit.co/lihalaco@yahoo.co.in"
+<form action="https://formsubmit.co/lihalaco@yahoo.co.in/"
 method="POST"
-enctype="multipart/form-data"
-class="bg-gray-50 p-8 rounded-xl shadow-md">
+enctype="multipart/form-data">
 
 <input type="hidden" name="_captcha" value="false">
 <input type="hidden" name="_subject" value="Resume Submission - Lihala & Co.">
-<input type="hidden" name="_template" value="table">
-<input type="hidden" name="_next" value="index.html">
-<input type="hidden" name="_autoresponse"
-value="Thank you for submitting your resume to Lihala & Co. Our team will review your profile and contact you if shortlisted.">
+<input type="hidden" name="_next" value="thankyou.html">
 
-<div class="mb-4">
+<div>
 <label>Full Name</label>
-<input type="text" name="Full_Name" required class="w-full border p-3 rounded-md">
+<input type="text" name="name" required>
 </div>
 
-<div class="mb-4">
+<div>
 <label>Phone Number</label>
-<input type="tel" name="Phone" required class="w-full border p-3 rounded-md">
+<input type="tel" name="phone" required>
 </div>
 
-<div class="mb-4">
+<div>
 <label>Email</label>
-<input type="email" name="email" required class="w-full border p-3 rounded-md">
+<input type="email" name="email" required>
 </div>
 
-<div class="mb-4">
+<div>
 <label>Date of Birth</label>
-<input type="date" name="DOB" class="w-full border p-3 rounded-md">
+<input type="date" name="dob">
 </div>
 
-<div class="mb-4">
+<div>
 <label>Location</label>
-<input type="text" name="Location" class="w-full border p-3 rounded-md">
+<input type="text" name="location">
 </div>
 
-<div class="mb-4">
+<div>
 <label>Address</label>
-<input type="text" name="Address" class="w-full border p-3 rounded-md">
+<input type="text" name="address">
 </div>
 
-<div class="mb-6">
-<label>Upload Resume (PDF/DOC/DOCX)</label>
-<input type="file" name="attachment" required
-accept=".pdf,.doc,.docx"
-class="w-full border p-3 rounded-md bg-white">
+<div>
+<label>Upload Resume</label>
+<input type="file" name="attachment" required>
 </div>
 
-<div class="text-center">
-<button type="submit"
-class="bg-blue-700 text-white px-10 py-3 rounded-lg font-semibold hover:bg-blue-800">
-Submit Resume
-</button>
-</div>
+<button type="submit">Submit Resume</button>
 
 </form>
 
@@ -189,6 +172,7 @@ Submit Resume
 
 </body>
 </html>
+
 
 
 
