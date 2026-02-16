@@ -118,64 +118,66 @@ Vacancies are available for suitable candidates.
 
 <form action="https://formsubmit.co/lihalaco@yahoo.co.in"
       method="POST"
-      enctype="multipart/form-data">
- class="bg-gray-50 p-8 rounded-xl shadow-md">
+      enctype="multipart/form-data"
+      class="bg-gray-50 p-8 rounded-xl shadow-md">
 
-<div class="grid md:grid-cols-2 gap-6">
+<!-- FormSubmit Controls -->
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_subject" value="New Resume Submission - Lihala & Co.">
+<input type="hidden" name="_template" value="table">
 
 <!-- Name -->
-<div>
+<div class="mb-4">
 <label class="block font-medium mb-1">Full Name</label>
-<input type="text" required
-class="w-full border border-gray-300 rounded-md p-3 focus:ring-2 focus:ring-blue-500">
+<input type="text" name="fullname" required
+class="w-full border border-gray-300 rounded-md p-3">
 </div>
 
 <!-- Phone -->
-<div>
+<div class="mb-4">
 <label class="block font-medium mb-1">Phone Number</label>
-<input type="tel" required
-class="w-full border border-gray-300 rounded-md p-3 focus:ring-2 focus:ring-blue-500">
+<input type="tel" name="phone" required
+class="w-full border border-gray-300 rounded-md p-3">
 </div>
 
 <!-- Email -->
-<div>
+<div class="mb-4">
 <label class="block font-medium mb-1">Email</label>
-<input type="email" required
-class="w-full border border-gray-300 rounded-md p-3 focus:ring-2 focus:ring-blue-500">
+<input type="email" name="email" required
+class="w-full border border-gray-300 rounded-md p-3">
 </div>
 
 <!-- DOB -->
-<div>
+<div class="mb-4">
 <label class="block font-medium mb-1">Date of Birth</label>
-<input type="date" required
-class="w-full border border-gray-300 rounded-md p-3 focus:ring-2 focus:ring-blue-500">
+<input type="date" name="dob"
+class="w-full border border-gray-300 rounded-md p-3">
 </div>
 
 <!-- Location -->
-<div>
-<label class="block font-medium mb-1">Current Location</label>
-<input type="text"
-class="w-full border border-gray-300 rounded-md p-3 focus:ring-2 focus:ring-blue-500">
+<div class="mb-4">
+<label class="block font-medium mb-1">Location</label>
+<input type="text" name="location"
+class="w-full border border-gray-300 rounded-md p-3">
 </div>
 
 <!-- Address -->
-<div>
+<div class="mb-4">
 <label class="block font-medium mb-1">Address</label>
-<input type="text"
-class="w-full border border-gray-300 rounded-md p-3 focus:ring-2 focus:ring-blue-500">
+<input type="text" name="address"
+class="w-full border border-gray-300 rounded-md p-3">
 </div>
 
-</div>
-
-<!-- Upload CV -->
-<div class="mt-6">
-<label class="block font-medium mb-1">Upload CV (PDF/DOC)</label>
-<input type="file" required
+<!-- Resume -->
+<div class="mb-6">
+<label class="block font-medium mb-1">Upload Resume (PDF/DOC)</label>
+<input type="file" name="attachment" required
+accept=".pdf,.doc,.docx"
 class="w-full border border-gray-300 rounded-md p-3 bg-white">
 </div>
 
 <!-- Submit -->
-<div class="mt-8 text-center">
+<div class="text-center">
 <button type="submit"
 class="bg-blue-700 text-white px-10 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
 Submit Resume
@@ -183,13 +185,6 @@ Submit Resume
 </div>
 
 </form>
-  <input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_subject" value="New Resume Submission - Lihala & Co.">
-<input type="hidden" name="_template" value="table">
-
-
-</div>
-</section>
 
 <!-- ================= FOOTER ================= -->
 
@@ -201,5 +196,6 @@ Submit Resume
 
 </body>
 </html>
+
 
 
