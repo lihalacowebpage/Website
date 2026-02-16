@@ -115,50 +115,71 @@ Vacancies are available for suitable candidates.
 <h3 class="text-3xl font-bold text-center mb-6">Post Your Resume</h3>
 <div class="w-20 h-1 bg-blue-600 mx-auto mb-10"></div>
 
-<form action="https://formsubmit.co/lihalaco@yahoo.co.in" method="POST" enctype="multipart/form-data">
+<form action="https://formsubmit.co/lihalaco@yahoo.co.in"
+method="POST"
+enctype="multipart/form-data"
+class="bg-gray-50 p-8 rounded-xl shadow-md space-y-5">
 
 <input type="hidden" name="_captcha" value="false">
 <input type="hidden" name="_subject" value="Resume Submission - Lihala & Co.">
+<input type="hidden" name="_template" value="table">
 <input type="hidden" name="_next" value="index.html">
 
-<p>
-<label>Full Name</label><br>
-<input type="text" name="name" required>
-</p>
+<div>
+<label class="block font-medium mb-1">Full Name</label>
+<input type="text" name="name" required
+class="w-full border border-gray-300 p-3 rounded-md focus:ring-2 focus:ring-blue-500">
+</div>
 
-<p>
-<label>Phone Number</label><br>
-<input type="tel" name="phone" required>
-</p>
+<div>
+<label class="block font-medium mb-1">Phone Number</label>
+<input type="tel" name="phone" required
+class="w-full border border-gray-300 p-3 rounded-md focus:ring-2 focus:ring-blue-500">
+</div>
 
-<p>
-<label>Email</label><br>
-<input type="email" name="email" required>
-</p>
+<div>
+<label class="block font-medium mb-1">Email</label>
+<input type="email" name="email" required
+class="w-full border border-gray-300 p-3 rounded-md focus:ring-2 focus:ring-blue-500">
+</div>
 
-<p>
-<label>Date of Birth</label><br>
-<input type="date" name="dob">
-</p>
+<div>
+<label class="block font-medium mb-1">Date of Birth</label>
+<input type="date" name="dob"
+class="w-full border border-gray-300 p-3 rounded-md focus:ring-2 focus:ring-blue-500">
+</div>
 
-<p>
-<label>Location</label><br>
-<input type="text" name="location">
-</p>
+<div>
+<label class="block font-medium mb-1">Location</label>
+<input type="text" name="location"
+class="w-full border border-gray-300 p-3 rounded-md focus:ring-2 focus:ring-blue-500">
+</div>
 
-<p>
-<label>Address</label><br>
-<input type="text" name="address">
-</p>
+<div>
+<label class="block font-medium mb-1">Address</label>
+<input type="text" name="address"
+class="w-full border border-gray-300 p-3 rounded-md focus:ring-2 focus:ring-blue-500">
+</div>
 
-<p>
-<label>Upload Resume</label><br>
-<input type="file" name="attachment" required>
-</p>
+<div>
+<label class="block font-medium mb-1">Upload Resume (PDF/DOC/DOCX)</label>
+<input type="file" name="attachment" required
+accept=".pdf,.doc,.docx"
+class="w-full border border-gray-300 p-3 rounded-md bg-white">
+</div>
 
-<button type="submit">Submit Resume</button>
+<div class="text-center pt-4">
+<button type="submit"
+class="bg-blue-700 text-white px-10 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
+Submit Resume
+</button>
+</div>
 
 </form>
+
+</div>
+</section>
+
 
 <!-- ================= FOOTER ================= -->
 
@@ -170,6 +191,7 @@ Vacancies are available for suitable candidates.
 
 </body>
 </html>
+
 
 
 
